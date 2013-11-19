@@ -11,6 +11,7 @@ public class Note implements Music {
     private void checkRep() {
         assert duration >= 0;
         assert instrument != null;
+        assert pitch != null;
     }
     
     /**
@@ -82,10 +83,4 @@ public class Note implements Music {
         return pitch.toString() + duration;
     }
     
-    public static void testNote() {
-        Note n = new Note(10, new Pitch('C'), Instrument.PIANO);
-        System.out.println("Note is: " + n);
-        Note n = new Note(10, new Pitch('C').transpose(1), Instrument.PIANO);
-        System.out.println("Note is: " + n);
-    }
 }
