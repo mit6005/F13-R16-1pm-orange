@@ -191,7 +191,7 @@ public class SequencePlayer {
     /**
      * Play an octave up and back down starting from middle C.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         SequencePlayer player;
 
         // create a new player, with 120 beats (i.e. quarter note) per
@@ -202,7 +202,7 @@ public class SequencePlayer {
         int start = 1;
         for (Pitch p : new Pitch[] {
                 new Pitch('C'),
-                new Pitch('D'),
+                new Pitch('D'), 
                 new Pitch('E'),
                 new Pitch('F'),
                 new Pitch('G'),
